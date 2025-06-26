@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, EventEmitter, inject, input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
 
 @Component({
@@ -17,8 +17,7 @@ export class TextMessageBoxComponent {
 
   disableCorrections = input<boolean>(false)
 
-  @Output()
-  onMessage = new EventEmitter<string>()
+  onMessage = output<string>()
 
    fb = inject(FormBuilder)
 

@@ -3,8 +3,16 @@
   (ngSubmit)="handleSubmit()"
   class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
 
+  <div class="mr-3">
+    <button (click)="fileInput.click()" class="flex items-center justify-center text-gray-400">
+        <i class="fa-solid fa-paperclip text-xl"></i>
+      </button>
+
+      <input type="file" (change)="handleSelectedFile($event)" #fileInput hidden>
+  </div>
+
   <div class="flex-grow">
-    <div class="relative w-full">
+    <div class="relative w-full">     
       <input type="text" 
       class="flex w-full border rounded-xl text-gray-800 focus:outline-none focus:border-indigo-300 pl-4 h-10"
       [placeholder]="placeholder()" 

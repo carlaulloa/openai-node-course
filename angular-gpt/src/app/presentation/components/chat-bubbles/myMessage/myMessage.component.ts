@@ -8,6 +8,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class MyMessageComponent { 
 
-  text = input.required<string>()
+  text = input.required<string>();
+  
 
 }
