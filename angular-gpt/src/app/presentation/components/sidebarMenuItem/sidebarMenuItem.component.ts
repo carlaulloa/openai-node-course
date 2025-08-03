@@ -15,7 +15,6 @@ import { RouterLink } from '@angular/router';
     </div>
     </a>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidebarMenuItemComponent { 
 
