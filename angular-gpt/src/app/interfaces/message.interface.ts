@@ -6,5 +6,9 @@ export interface Message {
     userScore: number;
     errors: string[];
     message: string;
+  };
+  imageInfo?: {
+    url: string;
+    alt: string;
   }
 }
