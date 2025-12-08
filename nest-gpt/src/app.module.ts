@@ -1,11 +1,13 @@
 import { Module } from '@nestjs/common';
 import { GptModule } from './gpt/gpt.module';
 import { ConfigModule } from '@nestjs/config';
+import { TestAssistantModule } from './test-assistant/test-assistant.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    GptModule],
+    GptModule,
+    TestAssistantModule],
   controllers: [],
   providers: [],
 })
